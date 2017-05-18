@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: nahid
- * Date: 12/7/16
- * Time: 4:58 PM.
- */
 if (!function_exists('chat_live')) {
     function chat_live($options)
     {

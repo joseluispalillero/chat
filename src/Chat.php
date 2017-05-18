@@ -1,13 +1,4 @@
 <?php
-/**
- * Class Chat.
- *
- * @author Nahid Bin Azhar
- *
- * @version 2.0.0
- *
- * @license https://creativecommons.org/licenses/by/4.0/ (CC BY 4.0)
- */
 
 namespace MilSonUno\Chat;
 
