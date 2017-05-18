@@ -10,7 +10,7 @@
 
     @if(!empty($chat__userChannel['name']))
     var userChannel = pusher.subscribe('{{$chat__userChannel['name']}}');
-    userChannel.bind('Chat-send-message', function(data) {
+    userChannel.bind('chat-send-message', function(data) {
         @foreach($chat__userChannel['callback'] as $callback)
         {!! $callback . '(data)'  !!}
         @endforeach
@@ -19,7 +19,7 @@
 
     @if(!empty($chat__conversationChannel['name']))
     var conversationChannel = pusher.subscribe('{{$chat__conversationChannel['name']}}');
-    conversationChannel.bind('Chat-send-message', function(data) {
+    conversationChannel.bind('chat-send-message', function(data) {
         @foreach($chat__conversationChannel['callback'] as $callback)
         {!! $callback . '(data)'  !!}
         @endforeach
